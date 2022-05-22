@@ -89,9 +89,9 @@ class NED:
         Returns
         -------
 
-        vector: array_like
-            An 200 dimension float array representing the mean embedding
-            of the word.
+        entity_scores: dictionary
+            A dictionary consists of entity score pairs sorted by their
+            scores in descending order.
         '''
 
         candidate_entities = concept_entities[concept_entities['entity'] == keyword]
